@@ -1,0 +1,48 @@
+.profile-img {
+  position: relative;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-bottom: 4%;
+
+  width: 306.76px;
+  height: 252.22px;
+  background-color: #C4C4C4;
+}
+
+.content {
+  font-family: Atkinson Hyperlegible;
+  font-size: 36px;
+  line-height: 30px;
+  color: #2E2F2F;
+
+  padding-left: 10%;
+}
+
+hr {
+  height: 1.8px;
+  background: black;
+}
+
+.left-timer {
+  position: relative;
+  bottom: 250px;
+  left: 300px;
+
+  font-family: Atkinson Hyperlegible;
+  font-size: 48px;
+  line-height: 38px;
+}
+
+.right-timer {
+  position: relative;
+  bottom: 288px;
+  left: 380px;
+
+  font-family: Atkinson Hyperlegible;
+  font-size: 48px;
+  line-height: 38px;
+}
+
+div.row {
+  margin-bottom: 0;
+}

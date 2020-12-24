@@ -1,0 +1,35 @@
+img {
+    max-width: none;
+}
+
+.voter_list {
+    margin-left: 7%;
+}
+.bg-gray-50{
+    background-color: #F9F9F9;
+}
+.text-gray-800{
+    color: #4C4D4D;
+}
+.text-gray-600{
+    color: #4C4D4D;
+}
+.bg-black{
+    background-color: #2E2F2F;
+}
+.border-black{
+    border-color: #2E2F2F;
+}
+
+.bg-gray-50:hover{
+    background-color: #EAEAEA;
+}
+
+#title {
+    font-family: Atkinson Hyperlegible;
+    font-weight: bold;
+}
+
+#list_index{
+    transition: opacity .5s ease-in-out;
+}

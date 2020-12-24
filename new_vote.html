@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="new_vote.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="new_vote.js"></script>
+    <title>new_vote</title>
+  </head>
+  <body>
+    <div class="relative h-40 bg-black">
+      <p class="absolute bottom-5 text-white pl-20 pb-3 text-5xl" id="title">Vice President</p>
+    </div>
+    <div class="mt-10 voter_list">
+      <ul class="space-y-2">
+        <ul class="flex space-x-2">
+          <li id="candidiate"
+            class=" transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+          >
+            <span class="py-4 flex flex-wrap content-center">
+              <span
+                class=" transition-opacity duration-500 ease-in-out absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
+                ><span id="vote_text" class="hidden" >Vote for</span><span id="index">A</span></span
+              >
+            </span>
+            <span class="py-6"
+              ><span
+                ><img
+                  class="rounded-sm"
+                  width="130"
+                  src="https://picsum.photos/130/170" /></span
+            ></span>
+            <span class="py-6"
+              ><p class="text-xl font-bold text-gray-800">Jhon Doe</p>
+              <ul
+                class="font-medium max-w-md space-y-1 text-1xl pt-2 text-gray-600"
+              >
+                <li>
+                  On time maintainance of hostels by creating seperate
+                  maintainance cells.
+                </li>
+                <li>Introducing the Best TA Awards</li>
+                <li>24x7 access to the Internet.</li>
+              </ul>
+            </span>
+          </li>
+          <li
+            class="transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+          >
+            <span class="py-4 flex flex-wrap content-center">
+              <span
+                class="transition duration-500 ease-in-out absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
+                >A</span
+              >
+            </span>
+            <span class="py-6"
+              ><span
+                ><img
+                  class="rounded-sm"
+                  width="130"
+                  src="https://picsum.photos/130/170" /></span
+            ></span>
+            <span class="py-6"
+              ><p class="text-xl font-bold text-gray-800">Jhon Doe</p>
+              <ul
+                class="font-medium max-w-md space-y-1 text-1xl pt-2 text-gray-600"
+              >
+                <li>
+                  On time maintainance of hostels by creating seperate
+                  maintainance cells.
+                </li>
+                <li>Introducing the Best TA Awards</li>
+                <li>24x7 access to the Internet.</li>
+              </ul>
+            </span>
+          </li>
+        </ul>
+        <ul class="flex space-x-2">
+          <li
+            class="transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+          >
+            <span class="py-4 flex flex-wrap content-center">
+              <span
+                class="absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
+                >A</span
+              >
+            </span>
+            <span class="py-6"
+              ><span
+                ><img
+                  class="rounded-sm"
+                  width="130"
+                  src="https://picsum.photos/130/170" /></span
+            ></span>
+            <span class="py-6"
+              ><p class="text-xl font-bold text-gray-800">Jhon Doe</p>
+              <ul
+                class="font-medium max-w-md space-y-1 text-1xl pt-2 text-gray-600"
+              >
+                <li>
+                  On time maintainance of hostels by creating seperate
+                  maintainance cells.
+                </li>
+                <li>Introducing the Best TA Awards</li>
+                <li>24x7 access to the Internet.</li>
+              </ul>
+            </span>
+          </li>
+          <li
+            class=" transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+          >
+            <span class="py-4 flex flex-wrap content-center">
+              <span
+                class=" absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
+                >A</span
+              >
+            </span>
+            <span class="py-6"
+              ><span
+                ><img
+                  class="rounded-sm"
+                  width="130"
+                  src="https://picsum.photos/130/170" /></span
+            ></span>
+            <span class="py-6"
+              ><p class="text-xl font-bold text-gray-800">Jhon Doe</p>
+              <ul
+                class="font-medium max-w-md space-y-1 text-1xl pt-2 text-gray-600"
+              >
+                <li>
+                  On time maintainance of hostels by creating seperate
+                  maintainance cells.
+                </li>
+                <li>Introducing the Best TA Awards</li>
+                <li>24x7 access to the Internet.</li>
+              </ul>
+            </span>
+          </li>
+        </ul>
+      </ul>
+    </div>
+
+    <!-- <div class="grid grid-cols-6 gap-y-3">
+      <div class="col-start-2 col-span-2 flex">
+        <div class="pr-7 relative top">A</div>
+        <span><img src="https://picsum.photos/143/124" /></span>
+        <div>
+            <h3 class="pl-4 font-mono font-bold text-xl">John Doe</h4>
+            <ul class="pl-4">
+                <li>Agenda 1</li>
+                <li>Agenda 2</li>
+                <li>Agenda 3</li>
+                <li>Agedna 4</li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-span-2 flex">
+        <span>B</span>
+        <img src="https://picsum.photos/143/124" />
+      </div>
+      <div class="col-start-2 col-span-2 flex">
+        <span>C</span>
+        <img src="https://picsum.photos/143/124" />
+      </div>
+      <div class="col-span-2 flex">
+        <span>D</span>
+        <img src="https://picsum.photos/143/124" />
+      </div>
+    </div>
+
+    <br>
+
+    <div class="text-center">
+
+        <ul class="text-center inline-flex space-x-1">
+            <li class="text-center border-2 border-black px-4 rounded-md flex bg-red-200 space-x-4">
+              <span class="py-4 flex flex-wrap content-center">
+                  <span class="m-auto  rounded-md bg-red-800 text-base font-bold px-3 py-2">A</span >
+                  </span>
+              <span class="text-lecpy-4"><img src="https://picsum.photos/143/124" /></span>
+              <span class="py-4 w-256 pr-4"
+                ><p class="text-3xl font-semibold">Jhon Doe</p>
+                  <ul class="space-y-1 text-1xl pt-2">
+                    <li class="text-left">
+                      - On time maintainance of hostels by creating seperate
+                      maintainance cells.
+                    </li>
+                    <li class="text-left">- Introducing the Best TA Awards</li>
+                    <li class="text-left">- 24x7 access to the Internet.</li>
+                  </ul>
+              </span>
+            </li>
+            <li class="px-4 rounded-md flex bg-red-200 space-x-4">
+              <span class="py-4 flex flex-wrap content-center">
+                  <span class="m-auto  rounded-md bg-red-800 text-base font-bold px- py-2">A</span >
+                  </span>
+              <span class="py-4"><img src="https://picsum.photos/143/124" /></span>
+              <span class="py-4 w-256 pr-4"
+                ><p class="text-left text-3xl font-semibold">Jhon Doe</p>
+                  <ul class="space-y-1 text-1xl pt-2">
+                    <li class="text-left" >
+                      - On time maintainance of hostels by creating seperate
+                      maintainance cells.
+                    </li>
+                    <li class="text-left">- Introducing the Best TA Awards</li>
+                    <li class="text-left">- 24x7 access to the Internet.</li>
+                  </ul>
+              </span>
+            </li>
+          </ul>
+      </div> -->
+  </body>
+</html>

@@ -13,19 +13,51 @@
     <title>new_vote</title>
   </head>
   <body>
-    <div class="relative h-40 bg-black">
-      <p class="absolute bottom-5 text-white pl-20 pb-3 text-5xl" id="title">Vice President</p>
+    <div class="relative w-full h-32 sm:h-40 bg-black gradient-black">
+      <p class="absolute bottom-5 text-white pl-10 sm:pl-20 pb-1 sm:pb-3 text-4xl sm:text-5xl" id="title">Vice President</p>
+      <button><img onmouseover="document.getElementById('info-txt').style.opacity=1" onmouseout="document.getElementById('info-txt').style.opacity=0" class="absolute bottom-3 sm:bottom-5 left-64 sm:left-96 pl-3 pb-4" src="icons/Group 298.png" alt=""></button>
+      <p id="info-txt" class="absolute text-white w-36 sm:w-96 sm:left-96 ml-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae asperiores rerum, aspernatur aut facilis ad ducimus nihil magnam aliquid fugit molestias blanditiis quod cumque quidem quo aliquam eaque. Rem.</p>
     </div>
-    <div class="mt-10 voter_list">
-      <ul class="space-y-2">
-        <ul class="flex space-x-2">
-          <li id="candidiate"
-            class=" transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+    <div class="mt-10 sm:pl-7 voter_list">
+      <ul class="w-96 pr-5 sm:pr-auto sm:w-auto space-y-4">
+        <ul class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+          <li id="A"
+            class=" hover:shadow transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
           >
-            <span class="py-4 flex flex-wrap content-center">
-              <span
+            <span  class="py-4 flex flex-wrap content-center ">
+              <span id = "action_box_container_A"
+                class=" transition-opacity duration-500 ease-in-out absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2 "
+                ><span id="text_A" class="hidden" >Vote for</span><span id="index_A">A</span></span
+              >
+            </span>
+            <span class="py-6"
+              ><span
+                ><img
+                  class="rounded-sm"
+                  width="130"
+                  src="https://picsum.photos/130/170" /></span
+            ></span>
+            <span class="py-6"
+              ><p class="text-xl font-bold text-gray-800">Jhon Doe</p>
+              <ul
+                class="font-medium max-w-md space-y-1 text-1xl pt-2 text-gray-600"
+              >
+                <li>
+                  On time maintainance of hostels by creating seperate
+                  maintainance cells.
+                </li>
+                <li>Introducing the Best TA Awards</li>
+                <li>24x7 access to the Internet.</li>
+              </ul>
+            </span>
+          </li>
+          <li id="B" 
+            class="hover:shadow transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+          >
+            <span  class="py-4 flex flex-wrap content-center">
+              <span id = "action_box_container_B"
                 class=" transition-opacity duration-500 ease-in-out absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
-                ><span id="vote_text" class="hidden" >Vote for</span><span id="index">A</span></span
+                ><span id="text_B" class="hidden" >Vote for</span><span id="index_B">B</span></span
               >
             </span>
             <span class="py-6"
@@ -49,13 +81,17 @@
               </ul>
             </span>
           </li>
-          <li
-            class="transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+      </ul>
+      <ul class="space-y-4">
+        <!-- <ul class="flex space-x-4"> -->
+        <ul class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+          <li id="C"
+            class=" hover:shadow transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
           >
-            <span class="py-4 flex flex-wrap content-center">
-              <span
-                class="transition duration-500 ease-in-out absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
-                >A</span
+            <span  class="py-4 flex flex-wrap content-center">
+              <span id = "action_box_container_C"
+                class=" transition-opacity duration-500 ease-in-out absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
+                ><span id="text_C" class="hidden" >Vote for</span><span id="index_C">C</span></span
               >
             </span>
             <span class="py-6"
@@ -79,15 +115,13 @@
               </ul>
             </span>
           </li>
-        </ul>
-        <ul class="flex space-x-2">
-          <li
-            class="transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
+          <li id="D" 
+            class=" hover:shadow transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
           >
-            <span class="py-4 flex flex-wrap content-center">
-              <span
-                class="absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
-                >A</span
+            <span  class="py-4 flex flex-wrap content-center">
+              <span id = "action_box_container_D"
+                class=" transition-opacity duration-500 ease-in-out absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
+                ><span id="text_D" class="hidden" >Vote for</span><span id="index_D">D</span></span
               >
             </span>
             <span class="py-6"
@@ -111,108 +145,9 @@
               </ul>
             </span>
           </li>
-          <li
-            class=" transition-colors duration-300 ease-in-out bg-gray-50 border-2 border-black pl-4 rounded-md flex space-x-4"
-          >
-            <span class="py-4 flex flex-wrap content-center">
-              <span
-                class=" absolute m-auto border border-black rounded-md bg-gray-100 text-base font-bold px-3 py-2"
-                >A</span
-              >
-            </span>
-            <span class="py-6"
-              ><span
-                ><img
-                  class="rounded-sm"
-                  width="130"
-                  src="https://picsum.photos/130/170" /></span
-            ></span>
-            <span class="py-6"
-              ><p class="text-xl font-bold text-gray-800">Jhon Doe</p>
-              <ul
-                class="font-medium max-w-md space-y-1 text-1xl pt-2 text-gray-600"
-              >
-                <li>
-                  On time maintainance of hostels by creating seperate
-                  maintainance cells.
-                </li>
-                <li>Introducing the Best TA Awards</li>
-                <li>24x7 access to the Internet.</li>
-              </ul>
-            </span>
-          </li>
-        </ul>
       </ul>
     </div>
-
-    <!-- <div class="grid grid-cols-6 gap-y-3">
-      <div class="col-start-2 col-span-2 flex">
-        <div class="pr-7 relative top">A</div>
-        <span><img src="https://picsum.photos/143/124" /></span>
-        <div>
-            <h3 class="pl-4 font-mono font-bold text-xl">John Doe</h4>
-            <ul class="pl-4">
-                <li>Agenda 1</li>
-                <li>Agenda 2</li>
-                <li>Agenda 3</li>
-                <li>Agedna 4</li>
-            </ul>
-        </div>
-      </div>
-      <div class="col-span-2 flex">
-        <span>B</span>
-        <img src="https://picsum.photos/143/124" />
-      </div>
-      <div class="col-start-2 col-span-2 flex">
-        <span>C</span>
-        <img src="https://picsum.photos/143/124" />
-      </div>
-      <div class="col-span-2 flex">
-        <span>D</span>
-        <img src="https://picsum.photos/143/124" />
-      </div>
-    </div>
-
-    <br>
-
-    <div class="text-center">
-
-        <ul class="text-center inline-flex space-x-1">
-            <li class="text-center border-2 border-black px-4 rounded-md flex bg-red-200 space-x-4">
-              <span class="py-4 flex flex-wrap content-center">
-                  <span class="m-auto  rounded-md bg-red-800 text-base font-bold px-3 py-2">A</span >
-                  </span>
-              <span class="text-lecpy-4"><img src="https://picsum.photos/143/124" /></span>
-              <span class="py-4 w-256 pr-4"
-                ><p class="text-3xl font-semibold">Jhon Doe</p>
-                  <ul class="space-y-1 text-1xl pt-2">
-                    <li class="text-left">
-                      - On time maintainance of hostels by creating seperate
-                      maintainance cells.
-                    </li>
-                    <li class="text-left">- Introducing the Best TA Awards</li>
-                    <li class="text-left">- 24x7 access to the Internet.</li>
-                  </ul>
-              </span>
-            </li>
-            <li class="px-4 rounded-md flex bg-red-200 space-x-4">
-              <span class="py-4 flex flex-wrap content-center">
-                  <span class="m-auto  rounded-md bg-red-800 text-base font-bold px- py-2">A</span >
-                  </span>
-              <span class="py-4"><img src="https://picsum.photos/143/124" /></span>
-              <span class="py-4 w-256 pr-4"
-                ><p class="text-left text-3xl font-semibold">Jhon Doe</p>
-                  <ul class="space-y-1 text-1xl pt-2">
-                    <li class="text-left" >
-                      - On time maintainance of hostels by creating seperate
-                      maintainance cells.
-                    </li>
-                    <li class="text-left">- Introducing the Best TA Awards</li>
-                    <li class="text-left">- 24x7 access to the Internet.</li>
-                  </ul>
-              </span>
-            </li>
-          </ul>
-      </div> -->
+    <button class="fixed shadow-none ring-opacity-0 ring-transparent bottom-14 bg-custom text-custom h-14 w-48 text-lg text-center font-bold right-1/3 mr-12 rounded-sm next-btn" id="nota">NOTA</button>
+    <button class="fixed shadow-none ring-opacity-0 ring-transparent bottom-14 bg-black text-white h-14 w-48 text-lg text-center font-bold right-1/4 rounded-sm next-btn">Next</button>
   </body>
 </html>
